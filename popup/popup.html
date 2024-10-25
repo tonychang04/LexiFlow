@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LexiFlow</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <h1>LexiFlow</h1>
+    <div class="form-group">
+        <label for="educationLevel">Education Level:</label>
+        <select id="educationLevel" required>
+            <option value="">Select a level</option>
+            <option value="elementary">Elementary</option>
+            <option value="high">High School</option>
+            <option value="college">College</option>
+            <option value="graduate">Graduate</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="interests">Interests (comma-separated):</label>
+        <input type="text" id="interests" placeholder="e.g., science, history, technology" required>
+    </div>
+    <div class="button-group">
+        <button id="saveSettings">Save Settings</button>
+        <button id="adaptPage">Adapt Current Page</button>
+    </div>
+    <div id="statusMessage" class="status-message"></div>
+    <script src="popup.js"></script>
+</body>
+</html>
